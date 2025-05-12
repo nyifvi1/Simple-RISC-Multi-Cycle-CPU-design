@@ -19,7 +19,7 @@ Main components:
 - 4-bit opcode with support for: ADD, SUB, MOV, AND, OR, XOR, JMP, JC, JNC  
 - Separate program and data memory  
 - Bidirectional shared data bus (BUS_A / BUS_B)
-- 
+ 
 ## Simulation Instructions  
 1. Open the project in ModelSim / Vivado / GHDL  
 2. Compile all VHDL files from the `src` directory  
