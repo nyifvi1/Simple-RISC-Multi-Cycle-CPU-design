@@ -1,4 +1,31 @@
-# LAB3 - Multi-cycle CPU design
+# Multi-cycle CPU design
+
+## Custom 16-bit CPU in VHDL  
+This project implements a simple 16-bit processor architecture using VHDL. It includes a control unit, datapath, ALU, register file, memory modules, and testbenches.
+
+## System Architecture  
+The CPU fetches, decodes, and executes instructions from program memory. It supports arithmetic and logic operations, branching, and memory load/store instructions.
+
+Main components:
+- **Control.vhd**: Finite state machine generating control signals
+- **Datapath.vhd**: Connects ALU, registers, and memory
+- **ALU.vhd**: Performs arithmetic and logic operations
+- **RF.vhd**: 16-register bank with read/write support
+- **ProgMem / DataMem**: Instruction and data storage
+
+## Features  
+- 16-bit instruction and data width  
+- Sign-extended immediate operands  
+- 4-bit opcode with support for: ADD, SUB, MOV, AND, OR, XOR, JMP, JC, JNC  
+- Separate program and data memory  
+- Bidirectional shared data bus (BUS_A / BUS_B)
+- 
+## Simulation Instructions  
+1. Open the project in ModelSim / Vivado / GHDL  
+2. Compile all VHDL files from the `src` directory  
+3. Run testbenches in `tb/` to simulate specific modules  
+4. Observe waveform and verify functional correctness
+
 
 # FA.vhd  
 This module implements a 1-bit Full Adder that receives two input bits and a carry-in, and produces a sum and carry-out. 
